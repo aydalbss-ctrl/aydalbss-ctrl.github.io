@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ayda Labassi | Strategic, Editorial & Digital Communications</title>
+  <title>A Lab by Ayda Labassi | Strategic, Editorial & Digital Communications</title>
   <meta name="description" content="Portfolio of Ayda Labassi, a communications professional working across strategic, editorial and digital communications in international development, media and culture.">
   <meta name="theme-color" content="#F8F2E8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,10 +107,25 @@
       gap: 40px;
     }
     .brand {
-      font-family: var(--serif);
-      font-size: 25px;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 9px;
       line-height: 1;
-      letter-spacing: -.02em;
+      white-space: nowrap;
+    }
+    .brand-name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .brand-by {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: -.015em;
+      color: var(--muted);
     }
     .nav-links {
       display: flex;
@@ -493,7 +508,9 @@
       .page { width: calc(100% - 48px); }
       .site-header { background: rgba(248, 242, 232, .97); }
       .nav { min-height: 64px; }
-      .brand { font-size: 22px; }
+      .brand { gap: 7px; }
+      .brand-name { font-size: 14px; }
+      .brand-by { font-size: 15px; }
       .menu-button { display: block; }
       .nav-links {
         position: absolute;
@@ -662,7 +679,7 @@
 <body>
   <header class="site-header">
     <div class="page nav">
-      <a class="brand" href="#top">Ayda Labassi</a>
+      <a class="brand" href="#top" aria-label="A Lab by Ayda Labassi, home"><span class="brand-name">A Lab</span><span class="brand-by">by Ayda Labassi</span></a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
         <a href="#work">Work</a>
@@ -803,7 +820,7 @@
 
   <footer>
     <div class="page footer-row">
-      <span>© <span id="year"></span> Ayda Labassi</span>
+      <span>© <span id="year"></span> A Lab by Ayda Labassi</span>
       <span>Strategic · Editorial · Digital Communications</span>
     </div>
   </footer>
