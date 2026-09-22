@@ -1,28 +1,28 @@
 {
   "seo": {
-    "title": "A Lab by Ayda Labassi | Strategic, Editorial & Digital Communications",
-    "description": "Portfolio of Ayda Labassi, a communications professional working across strategic, editorial and digital communications in international development, media and culture."
+    "title": "A Lab by Ayda Labassi | Creative Communications & Digital Work",
+    "description": "Portfolio of Ayda Labassi: creative communications, editorial work, digital tools, multimedia, concept development and events."
   },
   "hero": {
-    "title": "Digital communications, publications and multimedia for regional programmes.",
-    "support": "Website and social media content, reports and newsletters, campaigns, video, event communications and production coordination.",
-    "credibility": "Experience across UNDP Africa, UNHCR, digital media and cultural organisations.",
+    "title": "Concepts, content, digital tools and experiences.",
+    "support": "I develop ideas, write and edit, build digital products, coordinate creative production and manage events.",
+    "credibility": "Work spanning digital media, editorial, cultural projects and international organisations.",
     "link_label": "Explore selected work"
   },
   "work": {
     "label": "Selected Work",
-    "heading": "Digital campaigns, publications, web, multimedia and event communications.",
-    "intro": "Selected examples of the work I write, edit, coordinate and publish across regional programmes and digital channels.",
+    "heading": "Digital, editorial, creative production and events.",
+    "intro": "Projects ranging from websites and campaigns to publications, multimedia, event concepts and production.",
     "featured": [
       {
         "number": "01",
-        "title": "Regional digital communications",
-        "description": "Website, social media and campaign content for regional programmes, with communication support around launches, events and leadership engagements."
+        "title": "Concepts and campaigns",
+        "description": "Campaign ideas, messaging, content plans, digital roll-outs and the creative direction around them."
       },
       {
         "number": "02",
-        "title": "Publications and knowledge products",
-        "description": "Reports, briefs, newsletters and visual publications, including editorial review, design coordination, feedback rounds and final release."
+        "title": "Publications and editorial",
+        "description": "Reports, briefs, newsletters and visual publications, including editing, design coordination and final production."
       },
       {
         "number": "03",
@@ -31,7 +31,7 @@
         "labels": [
           "Video",
           "Photography",
-          "Event coverage"
+          "Production"
         ]
       }
     ],
@@ -39,63 +39,63 @@
     "secondary": [
       {
         "number": "04",
-        "title": "Web and digital publishing",
-        "description": "Website features, programme pages and updates, with attention to structure, editorial consistency and publishing."
+        "title": "Web and digital tools",
+        "description": "Websites, content systems, interactive tools and digital publishing."
       },
       {
         "number": "05",
-        "title": "Events and leadership communications",
-        "description": "Messaging, digital assets and communication support before, during and after regional forums, missions and leadership engagements."
+        "title": "Events and experiences",
+        "description": "Concept development, programme flow, communications, logistics and on-site coordination."
       },
       {
         "number": "06",
         "title": "Journalism and editorial",
-        "description": "News, interviews, features and analysis, alongside institutional stories and newsletters."
+        "description": "News, interviews, features and analysis, alongside longer-form editorial work."
       }
     ]
   },
   "practice": {
     "label": "Practice",
-    "heading": "Content, production and coordination.",
-    "intro": "The work usually involves writing and editing, planning digital content, managing production and keeping contributors and review rounds moving.",
+    "heading": "Concepts, content, production and delivery.",
+    "intro": "I move between ideas, writing, digital work, production and coordination depending on what a project needs.",
     "items": [
       {
         "number": "01",
-        "title": "Editorial direction",
-        "description": "Editing reports, briefs, newsletters and web content, and organising complex material so the structure and tone stay consistent."
+        "title": "Editorial and content",
+        "description": "Writing, editing and structuring content for websites, publications, newsletters, campaigns and longer-form pieces."
       },
       {
         "number": "02",
-        "title": "Digital communications",
-        "description": "Planning and publishing website, social media and newsletter content, including campaign assets and event coverage."
+        "title": "Digital tools and platforms",
+        "description": "Working with websites, CMSs, social platforms, newsletters and digital tools to build and publish useful content."
       },
       {
         "number": "03",
         "title": "Creative production",
-        "description": "Briefing and coordinating designers, photographers, video teams and suppliers, then reviewing outputs through final delivery."
+        "description": "Briefing and coordinating designers, photographers, video teams and suppliers, then reviewing the work through final delivery."
       },
       {
         "number": "04",
-        "title": "Communication management",
-        "description": "Managing timelines, inputs, approvals and vendors across publications, campaigns, multimedia and event communications."
+        "title": "Events and project management",
+        "description": "Developing event concepts, managing timelines and contributors, coordinating logistics and keeping delivery on track."
       }
     ]
   },
   "profile": {
     "label": "Profile",
-    "heading": "A background in journalism, UN communications and cultural work.",
-    "copy": "I started in journalism, then moved into external relations and reporting with UNHCR and regional digital communications with UNDP Africa. That mix of newsroom discipline, institutional writing and production coordination still shapes how I work.",
+    "heading": "A background in journalism, digital work, creative production and events.",
+    "copy": "I started in journalism and have since worked across editorial, digital communications, creative production, events and institutional projects. I am most interested in work that needs ideas and execution in equal measure: developing the concept, making the content, choosing the right tools and getting the whole thing delivered.",
     "linkedin_label": "LinkedIn",
     "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
   },
   "contact": {
     "label": "Contact",
-    "heading": "For roles, consultancies and project collaborations.",
+    "heading": "For roles, consultancies and creative collaborations.",
     "email": "aydalabassi@hotmail.com",
     "linkedin_label": "LinkedIn",
     "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
   },
   "footer": {
-    "descriptor": "Strategic · Editorial · Digital Communications"
+    "descriptor": "Creative · Digital · Editorial · Events"
   }
 }
