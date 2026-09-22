@@ -10,9 +10,9 @@
     "link_label": "Explore selected work"
   },
   "work": {
-    "label": "Selected projects",
-    "heading": "Work, not categories.",
-    "intro": "A first selection of projects showing where I designed, directed, interviewed, filmed, edited or developed the concept.",
+    "label": "Work",
+    "heading": "Selected projects.",
+    "intro": "A growing selection of recent work. Earlier journalism, cultural and external relations projects will be added next.",
     "featured": [
       {
         "number": "01",
