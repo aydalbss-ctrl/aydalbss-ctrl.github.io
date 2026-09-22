@@ -268,156 +268,218 @@
     }
 
     /* Work */
-    #work { padding: 144px 0; }
-    .work-intro { margin-bottom: 76px; }
+    #work { padding: 136px 0 148px; }
+    .work-intro { margin-bottom: 68px; }
     .work-label { grid-column: 1 / -1; }
-    .featured-grid {
+
+    .project-lead {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
       gap: 24px;
+      padding: 0 0 104px;
+      border-bottom: 1px solid var(--rule);
     }
-    .feature {
+    .project-art {
+      grid-column: 1 / span 7;
+      min-height: 610px;
       position: relative;
       overflow: hidden;
+      background: #efe7d5;
+      border: 1px solid rgba(23,23,20,.12);
     }
-    .feature-no {
-      display: block;
-      margin-bottom: 58px;
-      color: var(--olive);
-      font-size: 12px;
+    .c4p-cover {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1.2fr .22fr .22fr .22fr .22fr;
+      background: #efe7d5;
+    }
+    .c4p-main {
+      position: relative;
+      padding: 48px 42px;
+      overflow: hidden;
+    }
+    .c4p-kicker {
+      font-size: 11px;
       font-weight: 600;
-      letter-spacing: .15em;
-      transition: color 180ms ease;
+      line-height: 1.3;
+      letter-spacing: .14em;
+      text-transform: uppercase;
     }
-    .feature-title {
+    .c4p-title {
+      margin-top: 56px;
+      max-width: 420px;
+      font-family: var(--sans);
+      font-size: clamp(54px, 6vw, 82px);
+      font-weight: 600;
+      line-height: .88;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+    }
+    .c4p-four {
+      position: absolute;
+      right: -8px;
+      bottom: -70px;
+      color: #E97635;
+      font-family: var(--sans);
+      font-size: clamp(300px, 35vw, 500px);
+      font-weight: 600;
+      line-height: .75;
+      letter-spacing: -.08em;
+    }
+    .c4p-strip { border-left: 7px solid #efe7d5; }
+    .c4p-strip:nth-child(2) { background: #B45C35; }
+    .c4p-strip:nth-child(3) { background: #64714D; }
+    .c4p-strip:nth-child(4) { background: #D69A70; }
+    .c4p-strip:nth-child(5) { background: #596451; }
+
+    .project-lead-copy {
+      grid-column: 9 / span 4;
+      align-self: end;
+      padding-bottom: 12px;
+    }
+    .project-number,
+    .project-role,
+    .video-role {
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .project-number { color: var(--terracotta); margin-bottom: 18px; }
+    .project-title {
       margin: 0;
-      font-size: clamp(36px, 3.4vw, 44px);
-      line-height: 1.05;
-      transition: color 180ms ease, transform 180ms ease;
+      font-family: var(--serif);
+      font-size: clamp(46px, 4.8vw, 64px);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.025em;
     }
-    .feature-copy {
-      margin: 20px 0 0;
-      max-width: 560px;
+    .project-role {
+      margin: 24px 0 0;
+      color: var(--olive);
+    }
+    .project-desc {
+      margin: 24px 0 0;
       color: var(--muted);
       font-size: 17px;
-      line-height: 1.58;
+      line-height: 1.6;
     }
-    .feature:hover .feature-no { color: var(--terracotta); }
-    .feature:hover .feature-title { transform: translateX(4px); }
-    .feature-publications {
-      grid-column: 1 / span 7;
-      min-height: 480px;
-      padding: 42px 40px 46px 0;
-      border-top: 1px solid var(--ink);
-      border-bottom: 1px solid var(--rule);
+    .project-facts {
+      margin: 32px 0 0;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .feature-publications::after {
-      content: "Concept · Direction · Roll-out";
-      max-width: 430px;
-      color: var(--olive);
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      color: var(--muted);
       font-size: 12px;
-      font-weight: 500;
-      line-height: 1.4;
-      letter-spacing: .06em;
-      text-transform: uppercase;
+      letter-spacing: .04em;
     }
-    .feature-campaigns {
-      grid-column: 8 / span 5;
-      min-height: 480px;
-      padding: 42px 40px 46px;
-      background: var(--olive);
-      color: var(--ivory);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .feature-campaigns .feature-no { color: var(--sage); }
-    .feature-campaigns .feature-copy { color: rgba(248, 242, 232, .76); }
-    .feature-campaigns:hover .feature-no { color: var(--terracotta); }
-    .feature-media {
-      grid-column: 1 / -1;
-      min-height: 360px;
+    .project-link { margin-top: 30px; }
+
+    .video-feature {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
       gap: 24px;
+      padding: 104px 0;
       border-bottom: 1px solid var(--rule);
     }
-    .feature-media-field {
-      grid-column: 1 / span 5;
-      min-height: 360px;
-      padding: 42px 40px;
-      background: var(--sage);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .feature-media-field .feature-no { margin: 0; color: var(--olive); }
-    .feature-media-key {
-      display: grid;
-      gap: 7px;
-      color: var(--olive);
-      font-family: var(--sans);
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 1.25;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .feature-media-copy {
-      grid-column: 6 / span 7;
-      padding: 58px 0 48px 42px;
+    .video-feature-copy {
+      grid-column: 1 / span 4;
       align-self: center;
     }
-
-    .secondary-index { margin-top: 88px; }
-    .index-heading {
-      margin: 0 0 20px;
-      color: var(--olive);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .15em;
-      text-transform: uppercase;
+    .video-frame {
+      grid-column: 6 / span 7;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      width: 100%;
+      background: var(--ink);
     }
-    .index-row {
-      min-height: 92px;
+
+    .video-section { padding-top: 104px; }
+    .video-section-head {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
       gap: 24px;
-      align-items: center;
-      border-top: 1px solid var(--rule);
+      margin-bottom: 42px;
     }
-    .index-row:last-child { border-bottom: 1px solid var(--rule); }
-    .index-no {
-      grid-column: 1 / span 1;
-      color: var(--olive);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .15em;
-      transition: color 180ms ease;
-    }
-    .index-title {
-      grid-column: 3 / span 4;
-      font-family: var(--serif);
-      font-size: 26px;
-      line-height: 1.1;
-      transition: color 180ms ease, transform 180ms ease;
-    }
-    .index-copy {
-      grid-column: 8 / span 5;
+    .video-section-title {
+      grid-column: 1 / span 6;
       margin: 0;
-      max-width: 520px;
+      font-family: var(--serif);
+      font-size: clamp(42px, 4vw, 56px);
+      font-weight: 400;
+      line-height: 1.02;
+      letter-spacing: -.025em;
+    }
+    .video-section-note {
+      grid-column: 9 / span 4;
+      align-self: end;
+      margin: 0;
       color: var(--muted);
       font-size: 15px;
-      line-height: 1.5;
+      line-height: 1.55;
     }
-    .index-row:hover .index-no { color: var(--terracotta); }
-    .index-row:hover .index-title {
-      color: var(--olive);
-      transform: translateX(4px);
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
     }
+    .video-card {
+      grid-column: span 6;
+      display: block;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .video-thumb {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #ded7cb;
+    }
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: saturate(.88) contrast(.97);
+      transition: transform 300ms ease, filter 180ms ease;
+    }
+    .video-card:hover .video-thumb img { transform: scale(1.02); filter: saturate(1); }
+    .video-play {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      background: var(--ivory);
+      color: var(--ink);
+      font-size: 17px;
+    }
+    .video-meta {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: end;
+      padding-top: 18px;
+    }
+    .video-title {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 30px;
+      line-height: 1.08;
+    }
+    .video-role { margin-top: 8px; color: var(--olive); }
+    .video-arrow {
+      font-size: 22px;
+      line-height: 1;
+      transition: transform 180ms ease;
+    }
+    .video-card:hover .video-arrow { transform: translate(3px,-3px); }
 
     /* Practice */
     #practice { padding: 128px 0; }
@@ -681,6 +743,36 @@
         margin-top: 2px;
       }
 
+      .project-lead,
+      .video-feature,
+      .video-section-head,
+      .video-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .project-art,
+      .project-lead-copy,
+      .video-feature-copy,
+      .video-frame,
+      .video-section-title,
+      .video-section-note,
+      .video-card {
+        grid-column: 1 / -1;
+      }
+      .project-art { min-height: 470px; }
+      .project-lead { padding-bottom: 72px; }
+      .project-lead-copy { margin-top: 28px; }
+      .project-title { font-size: 44px; }
+      .video-feature { padding: 72px 0; }
+      .video-frame { margin-top: 20px; }
+      .video-section { padding-top: 72px; }
+      .video-section-note { margin-top: 8px; }
+      .video-card { padding-bottom: 24px; }
+      .video-title { font-size: 26px; }
+      .c4p-main { padding: 30px 24px; }
+      .c4p-title { margin-top: 42px; font-size: 52px; }
+      .c4p-four { font-size: 330px; bottom: -48px; }
+
       .practice-grid {
         grid-template-columns: 1fr;
         gap: 0;
@@ -757,58 +849,98 @@
     <section class="content-section" id="work">
       <div class="page">
         <div class="section-grid work-intro">
-          <div class="work-label"><p class="eyebrow">Selected Work</p></div>
-          <h2 class="section-heading serif">Direction, strategy and delivery.</h2>
-          <p class="section-intro">Work that starts with a brief and moves through concept, content, creative direction, coordination and final delivery.</p>
+          <div class="work-label"><p class="eyebrow">Selected projects</p></div>
+          <h2 class="section-heading serif">Work, not categories.</h2>
+          <p class="section-intro">A first selection of projects showing where I designed, directed, interviewed, filmed, edited or developed the concept.</p>
         </div>
 
-        <div class="featured-grid" aria-label="Featured areas of work">
-          <article class="feature feature-publications">
-            <div>
-              <span class="feature-no">01</span>
-              <h3 class="feature-title serif">Creative direction and campaigns</h3>
-              <p class="feature-copy">Creative direction, messaging, creative briefs, visual direction and roll-out planning.</p>
+        <article class="project-lead">
+          <a class="project-art" href="https://www.undp.org/africa/publications/creatives4peace-15-youth-led-creative-solutions-social-cohesion-and-peacebuilding" target="_blank" rel="noopener" aria-label="View Creatives4Peace publication">
+            <div class="c4p-cover" aria-hidden="true">
+              <div class="c4p-main">
+                <div class="c4p-kicker">Youth Creative Innovation Challenge</div>
+                <div class="c4p-title">Creatives<br>4Peace</div>
+                <div class="c4p-four">4</div>
+              </div>
+              <div class="c4p-strip"></div>
+              <div class="c4p-strip"></div>
+              <div class="c4p-strip"></div>
+              <div class="c4p-strip"></div>
             </div>
-          </article>
-
-          <article class="feature feature-campaigns">
-            <div>
-              <span class="feature-no">02</span>
-              <h3 class="feature-title serif">Editorial direction and publications</h3>
-              <p class="feature-copy">Editorial structure, editing, design review and production oversight for reports, newsletters, features and visual publications.</p>
-            </div>
-          </article>
-
-          <article class="feature feature-media">
-            <div class="feature-media-field">
-              <span class="feature-no">03</span>
-              <div class="feature-media-key"><span>Concept</span><span>Briefs</span><span>Review</span></div>
-            </div>
-            <div class="feature-media-copy">
-              <h3 class="feature-title serif">Multimedia direction</h3>
-              <p class="feature-copy">Concepts, briefs, storylines, team and vendor coordination, review and quality control for video and photography.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="secondary-index" aria-label="Additional areas of work">
-          <p class="index-heading">Also</p>
-          <div class="index-row">
-            <span class="index-no">04</span>
-            <span class="index-title">Digital platforms and tools</span>
-            <p class="index-copy">Web content strategy, information structure, CMS publishing and the use of digital tools in communications work.</p>
+          </a>
+          <div class="project-lead-copy">
+            <div class="project-number">01 / Publication</div>
+            <h3 class="project-title">Creatives4Peace</h3>
+            <p class="project-role">Creative direction · Publication design</p>
+            <p class="project-desc">Visual concept and full publication design, including the cover, page system, typography, image treatment and final layout.</p>
+            <div class="project-facts"><span>2026</span><span>15 finalist profiles</span><span>44 countries represented in the challenge</span></div>
+            <a class="text-link project-link" href="https://www.undp.org/africa/publications/creatives4peace-15-youth-led-creative-solutions-social-cohesion-and-peacebuilding" target="_blank" rel="noopener">View publication <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="index-row">
-            <span class="index-no">05</span>
-            <span class="index-title">Events and experiences</span>
-            <p class="index-copy">Concept, programme design, speaker and partner coordination, communications, production oversight and on-site delivery.</p>
+        </article>
+
+        <article class="video-feature">
+          <div class="video-feature-copy">
+            <div class="project-number">02 / Interview series</div>
+            <h3 class="project-title">Interviews, filmed and edited</h3>
+            <p class="project-role">Interviewing · Phone filming · Editing</p>
+            <p class="project-desc">A hands-on series where I conducted the interviews, filmed on my phone and edited the final videos.</p>
+            <a class="text-link project-link" href="https://youtube.com/playlist?list=PLeXbF67e2QWab3jY2-T0y6sbekoiFBp3V" target="_blank" rel="noopener">Open playlist <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="index-row">
-            <span class="index-no">06</span>
-            <span class="index-title">Journalism</span>
-            <p class="index-copy">Reporting, interviews, features, analysis and long-form editorial work.</p>
+          <iframe class="video-frame" loading="lazy" src="https://www.youtube.com/embed/videoseries?list=PLeXbF67e2QWab3jY2-T0y6sbekoiFBp3V" title="Interview video series" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+
+        <section class="video-section" aria-labelledby="video-work-title">
+          <div class="video-section-head">
+            <h3 class="video-section-title" id="video-work-title">Selected video work</h3>
+            <p class="video-section-note">Different roles on different pieces, from concept and direction to short-form editing.</p>
           </div>
-        </div>
+
+          <div class="video-grid">
+            <a class="video-card" href="https://youtu.be/T1VQXgIPZQY" target="_blank" rel="noopener">
+              <div class="video-thumb">
+                <img src="https://i.ytimg.com/vi/T1VQXgIPZQY/hqdefault.jpg" alt="" loading="lazy">
+                <span class="video-play" aria-hidden="true">▶</span>
+              </div>
+              <div class="video-meta">
+                <div><h4 class="video-title">Concept & direction</h4><div class="video-role">Video</div></div>
+                <span class="video-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+
+            <a class="video-card" href="https://youtu.be/yDcRZ48Uwn0" target="_blank" rel="noopener">
+              <div class="video-thumb">
+                <img src="https://i.ytimg.com/vi/yDcRZ48Uwn0/hqdefault.jpg" alt="" loading="lazy">
+                <span class="video-play" aria-hidden="true">▶</span>
+              </div>
+              <div class="video-meta">
+                <div><h4 class="video-title">Concept</h4><div class="video-role">Video</div></div>
+                <span class="video-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+
+            <a class="video-card" href="https://youtu.be/0E4hjhOXCw0" target="_blank" rel="noopener">
+              <div class="video-thumb">
+                <img src="https://i.ytimg.com/vi/0E4hjhOXCw0/hqdefault.jpg" alt="" loading="lazy">
+                <span class="video-play" aria-hidden="true">▶</span>
+              </div>
+              <div class="video-meta">
+                <div><h4 class="video-title">Trailer edit</h4><div class="video-role">Editing</div></div>
+                <span class="video-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+
+            <a class="video-card" href="https://youtu.be/ZIJP3xQp5a8" target="_blank" rel="noopener">
+              <div class="video-thumb">
+                <img src="https://i.ytimg.com/vi/ZIJP3xQp5a8/hqdefault.jpg" alt="" loading="lazy">
+                <span class="video-play" aria-hidden="true">▶</span>
+              </div>
+              <div class="video-meta">
+                <div><h4 class="video-title">Teaser edit</h4><div class="video-role">Editing</div></div>
+                <span class="video-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -838,7 +970,7 @@
           </article>
           <article class="practice-item">
             <span class="practice-no">04</span>
-            <h3 class="practice-title serif">Events and experiences and coordination</h3>
+            <h3 class="practice-title serif">Project and event management</h3>
             <p class="practice-copy">Timelines, contributors, partners, suppliers, approvals, logistics and delivery.</p>
           </article>
         </div>
@@ -873,7 +1005,7 @@
   <footer>
     <div class="page footer-row">
       <span>© <span id="year"></span> A Lab by Ayda Labassi</span>
-      <span>Creative Direction · Digital · Editorial · Events and experiences</span>
+      <span>Creative Direction · Digital · Editorial · Events</span>
     </div>
   </footer>
 
