@@ -1,33 +1,33 @@
 {
   "seo": {
-    "title": "A Lab by Ayda Labassi | Creative Communications & Digital Work",
-    "description": "Portfolio of Ayda Labassi: creative communications, editorial work, digital tools, multimedia, concept development and events."
+    "title": "A Lab by Ayda Labassi | Creative Communications, Digital & Events",
+    "description": "Portfolio of Ayda Labassi: creative communications, digital projects, editorial work, multimedia, concept development and events."
   },
   "hero": {
-    "title": "Concepts, content, digital tools and experiences.",
-    "support": "I develop ideas, write and edit, build digital products, coordinate creative production and manage events.",
-    "credibility": "Work spanning digital media, editorial, cultural projects and international organisations.",
+    "title": "Creative communications, digital projects and event concepts.",
+    "support": "I work on the idea, the words, the format and the delivery: campaigns, websites, publications, multimedia and events.",
+    "credibility": "Writing · Editing · Digital tools · Creative production · Events",
     "link_label": "Explore selected work"
   },
   "work": {
     "label": "Selected Work",
-    "heading": "Digital, editorial, creative production and events.",
-    "intro": "Projects ranging from websites and campaigns to publications, multimedia, event concepts and production.",
+    "heading": "What I make and manage.",
+    "intro": "Sometimes it is a campaign or a publication. Sometimes it is a website, a video, an event, or the concept that ties everything together.",
     "featured": [
       {
         "number": "01",
         "title": "Concepts and campaigns",
-        "description": "Campaign ideas, messaging, content plans, digital roll-outs and the creative direction around them."
+        "description": "The idea, the angle, the messaging, the content plan and the roll-out."
       },
       {
         "number": "02",
         "title": "Publications and editorial",
-        "description": "Reports, briefs, newsletters and visual publications, including editing, design coordination and final production."
+        "description": "Editing, structure, design coordination and production for reports, newsletters, features and visual publications."
       },
       {
         "number": "03",
         "title": "Multimedia production",
-        "description": "Video, photography and event coverage, including briefs, production teams, review rounds and final outputs.",
+        "description": "Video and photography briefs, production coordination, review rounds and final delivery.",
         "labels": [
           "Video",
           "Photography",
@@ -35,56 +35,56 @@
         ]
       }
     ],
-    "secondary_label": "Other work",
+    "secondary_label": "Also in the mix",
     "secondary": [
       {
         "number": "04",
-        "title": "Web and digital tools",
-        "description": "Websites, content systems, interactive tools and digital publishing."
+        "title": "Websites and digital tools",
+        "description": "Web content, page structure, CMS publishing and practical digital tools."
       },
       {
         "number": "05",
-        "title": "Events and experiences",
-        "description": "Concept development, programme flow, communications, logistics and on-site coordination."
+        "title": "Events",
+        "description": "Concept, programme flow, speaker and partner coordination, communications, logistics and on-site delivery."
       },
       {
         "number": "06",
-        "title": "Journalism and editorial",
-        "description": "News, interviews, features and analysis, alongside longer-form editorial work."
+        "title": "Journalism",
+        "description": "Reporting, interviews, features and analysis."
       }
     ]
   },
   "practice": {
     "label": "Practice",
-    "heading": "Concepts, content, production and delivery.",
-    "intro": "I move between ideas, writing, digital work, production and coordination depending on what a project needs.",
+    "heading": "What I actually do.",
+    "intro": "Projects rarely sit in one box. A week can involve a concept note, a homepage, a production brief, a run-of-show and a final edit.",
     "items": [
       {
         "number": "01",
-        "title": "Editorial and content",
-        "description": "Writing, editing and structuring content for websites, publications, newsletters, campaigns and longer-form pieces."
+        "title": "Concept development",
+        "description": "Turning a loose brief into a workable idea, format and plan."
       },
       {
         "number": "02",
-        "title": "Digital tools and platforms",
-        "description": "Working with websites, CMSs, social platforms, newsletters and digital tools to build and publish useful content."
+        "title": "Writing and editing",
+        "description": "Copy, features, reports, newsletters, scripts, web pages and campaign messaging."
       },
       {
         "number": "03",
-        "title": "Creative production",
-        "description": "Briefing and coordinating designers, photographers, video teams and suppliers, then reviewing the work through final delivery."
+        "title": "Digital and creative production",
+        "description": "Websites, CMS work, visual assets, video, photography and production briefs."
       },
       {
         "number": "04",
-        "title": "Events and project management",
-        "description": "Developing event concepts, managing timelines and contributors, coordinating logistics and keeping delivery on track."
+        "title": "Events and coordination",
+        "description": "Programmes, timelines, partners, suppliers, logistics, reviews and on-site delivery."
       }
     ]
   },
   "profile": {
     "label": "Profile",
-    "heading": "A background in journalism, digital work, creative production and events.",
-    "copy": "I started in journalism and have since worked across editorial, digital communications, creative production, events and institutional projects. I am most interested in work that needs ideas and execution in equal measure: developing the concept, making the content, choosing the right tools and getting the whole thing delivered.",
+    "heading": "Journalism, digital work, creative production and events.",
+    "copy": "That mix is why I am comfortable switching between writing, concept development, production and coordination. I like projects where the idea and the execution both matter.",
     "linkedin_label": "LinkedIn",
     "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
   },
@@ -96,6 +96,6 @@
     "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
   },
   "footer": {
-    "descriptor": "Creative · Digital · Editorial · Events"
+    "descriptor": "Concepts · Digital · Editorial · Events"
   }
 }
