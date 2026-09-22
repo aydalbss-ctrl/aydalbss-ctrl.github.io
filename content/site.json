@@ -1,0 +1,101 @@
+{
+  "seo": {
+    "title": "A Lab by Ayda Labassi | Strategic, Editorial & Digital Communications",
+    "description": "Portfolio of Ayda Labassi, a communications professional working across strategic, editorial and digital communications in international development, media and culture."
+  },
+  "hero": {
+    "title": "Digital communications, publications and multimedia for regional programmes.",
+    "support": "Website and social media content, reports and newsletters, campaigns, video, event communications and production coordination.",
+    "credibility": "Experience across UNDP Africa, UNHCR, digital media and cultural organisations.",
+    "link_label": "Explore selected work"
+  },
+  "work": {
+    "label": "Selected Work",
+    "heading": "Digital campaigns, publications, web, multimedia and event communications.",
+    "intro": "Selected examples of the work I write, edit, coordinate and publish across regional programmes and digital channels.",
+    "featured": [
+      {
+        "number": "01",
+        "title": "Regional digital communications",
+        "description": "Website, social media and campaign content for regional programmes, with communication support around launches, events and leadership engagements."
+      },
+      {
+        "number": "02",
+        "title": "Publications and knowledge products",
+        "description": "Reports, briefs, newsletters and visual publications, including editorial review, design coordination, feedback rounds and final release."
+      },
+      {
+        "number": "03",
+        "title": "Multimedia production",
+        "description": "Video, photography and event coverage, including briefs, production teams, review rounds and final outputs.",
+        "labels": [
+          "Video",
+          "Photography",
+          "Event coverage"
+        ]
+      }
+    ],
+    "secondary_label": "Other work",
+    "secondary": [
+      {
+        "number": "04",
+        "title": "Web and digital publishing",
+        "description": "Website features, programme pages and updates, with attention to structure, editorial consistency and publishing."
+      },
+      {
+        "number": "05",
+        "title": "Events and leadership communications",
+        "description": "Messaging, digital assets and communication support before, during and after regional forums, missions and leadership engagements."
+      },
+      {
+        "number": "06",
+        "title": "Journalism and editorial",
+        "description": "News, interviews, features and analysis, alongside institutional stories and newsletters."
+      }
+    ]
+  },
+  "practice": {
+    "label": "Practice",
+    "heading": "Content, production and coordination.",
+    "intro": "The work usually involves writing and editing, planning digital content, managing production and keeping contributors and review rounds moving.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Editorial direction",
+        "description": "Editing reports, briefs, newsletters and web content, and organising complex material so the structure and tone stay consistent."
+      },
+      {
+        "number": "02",
+        "title": "Digital communications",
+        "description": "Planning and publishing website, social media and newsletter content, including campaign assets and event coverage."
+      },
+      {
+        "number": "03",
+        "title": "Creative production",
+        "description": "Briefing and coordinating designers, photographers, video teams and suppliers, then reviewing outputs through final delivery."
+      },
+      {
+        "number": "04",
+        "title": "Communication management",
+        "description": "Managing timelines, inputs, approvals and vendors across publications, campaigns, multimedia and event communications."
+      }
+    ]
+  },
+  "profile": {
+    "label": "Profile",
+    "heading": "A background in journalism, UN communications and cultural work.",
+    "copy": "I started in journalism, then moved into external relations and reporting with UNHCR and regional digital communications with UNDP Africa. That mix of newsroom discipline, institutional writing and production coordination still shapes how I work.",
+    "linkedin_label": "LinkedIn",
+    "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "For roles, consultancies and project collaborations.",
+    "email": "aydalabassi@hotmail.com",
+    "linkedin_label": "LinkedIn",
+    "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
+  },
+  "footer": {
+    "descriptor": "Strategic · Editorial · Digital Communications"
+  }
+}
