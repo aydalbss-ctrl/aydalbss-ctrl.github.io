@@ -314,14 +314,16 @@
       justify-content: space-between;
     }
     .feature-media-field .feature-no { margin: 0; color: var(--olive); }
-    .feature-media-mark {
-      margin: 0;
+    .feature-media-key {
+      display: grid;
+      gap: 7px;
       color: var(--olive);
-      font-family: var(--serif);
-      font-size: clamp(100px, 11vw, 156px);
-      font-weight: 400;
-      line-height: .75;
-      letter-spacing: -.06em;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: .12em;
+      text-transform: uppercase;
     }
     .feature-media-copy {
       grid-column: 6 / span 7;
@@ -606,7 +608,7 @@
         min-height: 180px;
         padding: 28px 26px;
       }
-      .feature-media-mark { font-size: 90px; }
+      .feature-media-key { font-size: 11px; }
       .feature-media-copy {
         grid-column: 1 / -1;
         padding: 36px 0 40px;
@@ -693,8 +695,8 @@
   <main id="top">
     <section class="hero">
       <div class="page hero-grid">
-        <h1 class="hero-title serif">Shaping how complex work is understood, seen and shared.</h1>
-        <p class="hero-support">Strategic, editorial and digital communications across international development, media and culture.</p>
+        <h1 class="hero-title serif">Strategic communications, editorial direction and digital delivery.</h1>
+        <p class="hero-support">Across regional programmes, publications, campaigns, web, multimedia and high-level engagements.</p>
         <div class="hero-meta">
           <p class="hero-cred">Experience across UNDP Africa, UNHCR, digital media and cultural organisations.</p>
           <a class="text-link hero-link" href="#work">Explore selected work <span aria-hidden="true">→</span></a>
@@ -706,35 +708,35 @@
       <div class="page">
         <div class="section-grid work-intro">
           <div class="work-label"><p class="eyebrow">Selected Work</p></div>
-          <h2 class="section-heading serif">Communication across formats, platforms and audiences.</h2>
-          <p class="section-intro">Selected digital, editorial and multimedia work across campaigns, publications, platforms and regional initiatives.</p>
+          <h2 class="section-heading serif">Selected work across programmes, platforms and public-facing communication.</h2>
+          <p class="section-intro">A selection of the communication work I shape, coordinate and deliver across regional initiatives, editorial products and digital channels.</p>
         </div>
 
         <div class="featured-grid" aria-label="Featured areas of work">
           <article class="feature feature-publications">
             <div>
               <span class="feature-no">01</span>
-              <h3 class="feature-title serif">Publications and knowledge products</h3>
-              <p class="feature-copy">Editorial direction, production coordination and quality control from draft to dissemination.</p>
+              <h3 class="feature-title serif">Regional programmes and campaigns</h3>
+              <p class="feature-copy">Positioning, messaging and digital delivery for multi-country initiatives, including social media, web, event moments and follow-up.</p>
             </div>
           </article>
 
           <article class="feature feature-campaigns">
             <div>
               <span class="feature-no">02</span>
-              <h3 class="feature-title serif">Campaigns and social media</h3>
-              <p class="feature-copy">Planning, messaging and content delivery across digital channels.</p>
+              <h3 class="feature-title serif">Publications and knowledge products</h3>
+              <p class="feature-copy">Editorial direction and production oversight for reports, briefs, newsletters and visual knowledge products, from first draft to final release.</p>
             </div>
           </article>
 
           <article class="feature feature-media">
             <div class="feature-media-field">
               <span class="feature-no">03</span>
-              <p class="feature-media-mark" aria-hidden="true">M</p>
+              <div class="feature-media-key"><span>Video</span><span>Photography</span><span>Event coverage</span></div>
             </div>
             <div class="feature-media-copy">
-              <h3 class="feature-title serif">Multimedia and video</h3>
-              <p class="feature-copy">Narrative development and production coordination across video, photography and digital formats.</p>
+              <h3 class="feature-title serif">Multimedia and event storytelling</h3>
+              <p class="feature-copy">Video, photography and event coverage shaped around a clear narrative, with production coordination across teams and suppliers.</p>
             </div>
           </article>
         </div>
@@ -743,18 +745,18 @@
           <p class="index-heading">Also across</p>
           <div class="index-row">
             <span class="index-no">04</span>
-            <span class="index-title">Websites and digital platforms</span>
-            <p class="index-copy">Audience-focused content, information structure and institutional publishing.</p>
+            <span class="index-title">Web and digital publishing</span>
+            <p class="index-copy">Website features, landing pages and content structures for institutional and public audiences.</p>
           </div>
           <div class="index-row">
             <span class="index-no">05</span>
-            <span class="index-title">Events and regional initiatives</span>
-            <p class="index-copy">Communication planning and delivery across high-level engagements.</p>
+            <span class="index-title">Leadership and high-level engagements</span>
+            <p class="index-copy">Messaging, digital assets and communication support around regional forums, missions and executive moments.</p>
           </div>
           <div class="index-row">
             <span class="index-no">06</span>
-            <span class="index-title">Editorial work</span>
-            <p class="index-copy">Reporting, interviews, newsletters, features and long-form content.</p>
+            <span class="index-title">Journalism and long-form editorial</span>
+            <p class="index-copy">Reporting, interviews, features and analysis grounded in newsroom discipline and public-facing storytelling.</p>
           </div>
         </div>
       </div>
