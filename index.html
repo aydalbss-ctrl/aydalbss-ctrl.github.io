@@ -481,6 +481,141 @@
     }
     .video-card:hover .video-arrow { transform: translate(3px,-3px); }
 
+    /* Events + web */
+    .experience-section {
+      margin-top: 118px;
+      padding-top: 104px;
+      border-top: 1px solid var(--rule);
+    }
+    .experience-head,
+    .web-head {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .experience-title,
+    .web-title {
+      grid-column: 1 / span 7;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(44px, 4.4vw, 60px);
+      font-weight: 400;
+      line-height: 1.02;
+      letter-spacing: -.025em;
+    }
+    .experience-note,
+    .web-note {
+      grid-column: 9 / span 4;
+      align-self: end;
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    .event-case {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
+      padding: 0 0 96px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .event-copy {
+      grid-column: 1 / span 4;
+      align-self: end;
+    }
+    .event-gallery {
+      grid-column: 6 / span 7;
+      display: grid;
+      grid-template-columns: 1.45fr .85fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+    .booth-photo {
+      position: relative;
+      overflow: hidden;
+      background: #ded7cb;
+      min-height: 430px;
+    }
+    .booth-photo img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .booth-photo-portrait img { object-position: 50% 46%; }
+    .face-blur {
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(248,242,232,.06);
+      pointer-events: none;
+    }
+    .wide-face-1 { width: 7%; aspect-ratio: 1; left: 47%; top: 30%; }
+    .wide-face-2 { width: 7%; aspect-ratio: 1; left: 57%; top: 37%; }
+    .wide-face-3 { width: 6.5%; aspect-ratio: 1; left: 70%; top: 38%; }
+    .wide-face-4 { width: 6.5%; aspect-ratio: 1; left: 79%; top: 47%; }
+    .portrait-face { width: 25%; aspect-ratio: 1; left: 37.5%; top: 18%; }
+    .event-video {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
+      padding: 96px 0 0;
+    }
+    .event-video .event-copy { grid-column: 8 / span 5; order: 2; }
+    .event-video .video-frame { grid-column: 1 / span 6; order: 1; }
+
+    .web-section {
+      margin-top: 118px;
+      padding-top: 104px;
+      border-top: 1px solid var(--rule);
+    }
+    .web-columns {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .web-column:first-child { grid-column: 1 / span 6; }
+    .web-column:last-child { grid-column: 7 / span 6; }
+    .web-column h4 {
+      margin: 0 0 14px;
+      color: var(--olive);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .web-link {
+      min-height: 86px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      border-top: 1px solid var(--rule);
+      transition: color 180ms ease;
+    }
+    .web-link:last-child { border-bottom: 1px solid var(--rule); }
+    .web-link-title {
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.08;
+    }
+    .web-link-arrow {
+      font-size: 20px;
+      transition: transform 180ms ease;
+    }
+    .web-link:hover { color: var(--olive); }
+    .web-link:hover .web-link-arrow { transform: translate(3px,-3px); }
+    .web-role {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
     /* Practice */
     #practice { padding: 128px 0; }
     .practice-intro { margin-bottom: 72px; }
@@ -773,6 +908,41 @@
       .c4p-title { margin-top: 42px; font-size: 52px; }
       .c4p-four { font-size: 330px; bottom: -48px; }
 
+      .experience-section,
+      .web-section { margin-top: 88px; padding-top: 72px; }
+      .experience-head,
+      .web-head,
+      .event-case,
+      .event-video,
+      .web-columns {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .experience-title,
+      .experience-note,
+      .web-title,
+      .web-note,
+      .event-copy,
+      .event-video .event-copy,
+      .event-video .video-frame,
+      .event-gallery,
+      .web-column:first-child,
+      .web-column:last-child {
+        grid-column: 1 / -1;
+      }
+      .experience-note,
+      .web-note { margin-top: 8px; }
+      .event-case { padding-bottom: 72px; }
+      .event-copy { margin-bottom: 26px; }
+      .event-gallery { grid-template-columns: 1fr; }
+      .booth-photo { min-height: 300px; }
+      .booth-photo-portrait { min-height: 420px; }
+      .event-video { padding-top: 72px; }
+      .event-video .event-copy { order: 1; margin-bottom: 20px; }
+      .event-video .video-frame { order: 2; }
+      .web-column + .web-column { margin-top: 46px; }
+      .web-link-title { font-size: 22px; }
+
       .practice-grid {
         grid-template-columns: 1fr;
         gap: 0;
@@ -939,6 +1109,75 @@
                 <span class="video-arrow" aria-hidden="true">↗</span>
               </div>
             </a>
+          </div>
+        </section>
+
+        <section class="experience-section" aria-labelledby="experiences-title">
+          <div class="experience-head">
+            <h3 class="experience-title" id="experiences-title">Events as creative projects</h3>
+            <p class="experience-note">Concept work for physical spaces and event experiences, alongside communications and delivery.</p>
+          </div>
+
+          <article class="event-case">
+            <div class="event-copy">
+              <div class="project-number">03 / ARFSD12 Knowledge Fair</div>
+              <h3 class="project-title">Photo booth & stand concept</h3>
+              <p class="project-role">Concept · Stand décor · Photo booth</p>
+              <p class="project-desc">Developed the concept for the UNDP stand and photo booth in Addis Ababa, including the social-media frame, Africa-shaped cut-out and stand decoration.</p>
+              <a class="text-link project-link" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd12" target="_blank" rel="noopener">View event page <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <div class="event-gallery">
+              <figure class="booth-photo booth-photo-wide">
+                <img src="https://live.staticflickr.com/65535/55235555877_345bec40e4_o.jpg" alt="UNDP stand at the ARFSD12 Knowledge Fair" loading="lazy">
+                <span class="face-blur wide-face-1" aria-hidden="true"></span>
+                <span class="face-blur wide-face-2" aria-hidden="true"></span>
+                <span class="face-blur wide-face-3" aria-hidden="true"></span>
+                <span class="face-blur wide-face-4" aria-hidden="true"></span>
+              </figure>
+              <figure class="booth-photo booth-photo-portrait">
+                <img src="https://live.staticflickr.com/65535/55236456871_cc21efcefe_o.jpg" alt="ARFSD12 photo booth concept" loading="lazy">
+                <span class="face-blur portrait-face" aria-hidden="true"></span>
+              </figure>
+            </div>
+          </article>
+
+          <article class="event-video">
+            <div class="event-copy">
+              <div class="project-number">04 / ARFSD11 Knowledge Fair · Kampala</div>
+              <h3 class="project-title">Knowledge Fair booth</h3>
+              <p class="project-role">Booth concept · Video direction</p>
+              <p class="project-desc">Developed the booth concept and directed the video presenting the Knowledge Fair activation in Kampala.</p>
+              <a class="text-link project-link" href="https://youtu.be/830Hj2InZVA" target="_blank" rel="noopener">Watch video <span aria-hidden="true">↗</span></a>
+            </div>
+            <iframe class="video-frame" loading="lazy" src="https://www.youtube.com/embed/830Hj2InZVA" title="ARFSD11 Knowledge Fair booth video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </article>
+        </section>
+
+        <section class="web-section" aria-labelledby="web-work-title">
+          <div class="web-head">
+            <h3 class="web-title" id="web-work-title">Webpage creation & digital publishing</h3>
+            <p class="web-note">Page structure, copy, assets and CMS publishing for event and project pages.</p>
+          </div>
+
+          <div class="web-columns">
+            <div class="web-column">
+              <h4>Events</h4>
+              <a class="web-link" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd12" target="_blank" rel="noopener"><span class="web-link-title">ARFSD12</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="web-link" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd11" target="_blank" rel="noopener"><span class="web-link-title">ARFSD11</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="web-link" href="https://www.undp.org/africa/events/africa-conference-disability-inclusion-electoral-processes-digital-era" target="_blank" rel="noopener"><span class="web-link-title">Africa Conference on Disability Inclusion in Electoral Processes</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <p class="web-role">Event pages: structure · copy · links · resources · publishing</p>
+            </div>
+
+            <div class="web-column">
+              <h4>Projects & programmes</h4>
+              <a class="web-link" href="https://www.undp.org/africa-elections-fund-aef" target="_blank" rel="noopener"><span class="web-link-title">Africa Elections Fund</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="web-link" href="https://www.undp.org/africa/regional-programme-africa" target="_blank" rel="noopener"><span class="web-link-title">Regional Programme for Africa</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="web-link" href="https://www.undp.org/africa/afcfta" target="_blank" rel="noopener"><span class="web-link-title">AfCFTA</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="web-link" href="https://www.undp.org/africa/AfYWL" target="_blank" rel="noopener"><span class="web-link-title">African Young Women Leaders Fellowship</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="web-link" href="https://www.undp.org/africa/AboutAFSIT" target="_blank" rel="noopener"><span class="web-link-title">AFSIT</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
+              <p class="web-role">Project pages: information structure · editorial copy · visual assets · CMS publishing</p>
+            </div>
           </div>
         </section>
       </div>
