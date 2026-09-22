@@ -1,0 +1,186 @@
+media:
+  input: media
+  output: /media
+  rename: safe
+
+content:
+  - name: site
+    label: Portfolio copy
+    type: file
+    path: content/site.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: seo
+        label: SEO
+        type: object
+        fields:
+          - name: title
+            label: Browser title
+            type: string
+          - name: description
+            label: Search description
+            type: text
+
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - name: title
+            label: Headline
+            type: text
+          - name: support
+            label: Supporting line
+            type: text
+          - name: credibility
+            label: Credibility line
+            type: text
+          - name: link_label
+            label: Work link label
+            type: string
+
+      - name: work
+        label: Selected Work
+        type: object
+        fields:
+          - name: label
+            label: Section label
+            type: string
+          - name: heading
+            label: Heading
+            type: text
+          - name: intro
+            label: Introduction
+            type: text
+          - name: featured
+            label: Featured areas
+            type: object
+            list:
+              min: 3
+              max: 3
+              collapsible:
+                collapsed: true
+                summary: "{number} · {title}"
+            fields:
+              - name: number
+                label: Number
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: labels
+                label: Small labels
+                type: string
+                list: true
+          - name: secondary_label
+            label: Secondary index label
+            type: string
+          - name: secondary
+            label: Secondary areas
+            type: object
+            list:
+              min: 3
+              max: 3
+              collapsible:
+                collapsed: true
+                summary: "{number} · {title}"
+            fields:
+              - name: number
+                label: Number
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+
+      - name: practice
+        label: Practice
+        type: object
+        fields:
+          - name: label
+            label: Section label
+            type: string
+          - name: heading
+            label: Heading
+            type: text
+          - name: intro
+            label: Introduction
+            type: text
+          - name: items
+            label: Practice areas
+            type: object
+            list:
+              min: 4
+              max: 4
+              collapsible:
+                collapsed: true
+                summary: "{number} · {title}"
+            fields:
+              - name: number
+                label: Number
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+
+      - name: profile
+        label: Profile
+        type: object
+        fields:
+          - name: label
+            label: Section label
+            type: string
+          - name: heading
+            label: Heading
+            type: text
+          - name: copy
+            label: Profile copy
+            type: text
+          - name: linkedin_label
+            label: LinkedIn link label
+            type: string
+          - name: linkedin_url
+            label: LinkedIn URL
+            type: string
+
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - name: label
+            label: Section label
+            type: string
+          - name: heading
+            label: Heading
+            type: text
+          - name: email
+            label: Email
+            type: string
+          - name: linkedin_label
+            label: LinkedIn link label
+            type: string
+          - name: linkedin_url
+            label: LinkedIn URL
+            type: string
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: descriptor
+            label: Descriptor
+            type: string
+
+settings:
+  commit:
+    templates:
+      update: "Edit portfolio copy in Pages CMS"
