@@ -268,466 +268,352 @@
     }
 
     /* Work */
-    #work { padding: 136px 0 148px; }
-    .work-intro { margin-bottom: 68px; }
+    #work { padding: 132px 0 142px; }
+    .work-intro { margin-bottom: 64px; }
     .work-label { grid-column: 1 / -1; }
 
-    .project-lead {
+    .case {
+      padding: 0 0 112px;
+      margin-bottom: 112px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .case:last-of-type { margin-bottom: 0; }
+    .case-head {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
       gap: 24px;
-      padding: 0 0 104px;
-      border-bottom: 1px solid var(--rule);
+      margin-bottom: 34px;
+      align-items: end;
     }
-    .project-art {
+    .case-title {
       grid-column: 1 / span 7;
-      min-height: 610px;
-      position: relative;
-      overflow: hidden;
-      background: #efe7d5;
-      border: 1px solid rgba(23,23,20,.12);
-    }
-    .c4p-cover {
-      position: absolute;
-      inset: 0;
-      display: grid;
-      grid-template-columns: 1.2fr .22fr .22fr .22fr .22fr;
-      background: #efe7d5;
-    }
-    .c4p-main {
-      position: relative;
-      padding: 48px 42px;
-      overflow: hidden;
-    }
-    .c4p-kicker {
-      font-size: 11px;
-      font-weight: 600;
-      line-height: 1.3;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    .c4p-title {
-      margin-top: 56px;
-      max-width: 420px;
-      font-family: var(--sans);
-      font-size: clamp(54px, 6vw, 82px);
-      font-weight: 600;
-      line-height: .88;
-      letter-spacing: -.055em;
-      text-transform: uppercase;
-    }
-    .c4p-four {
-      position: absolute;
-      right: -8px;
-      bottom: -70px;
-      color: #E97635;
-      font-family: var(--sans);
-      font-size: clamp(300px, 35vw, 500px);
-      font-weight: 600;
-      line-height: .75;
-      letter-spacing: -.08em;
-    }
-    .c4p-strip { border-left: 7px solid #efe7d5; }
-    .c4p-strip:nth-child(2) { background: #B45C35; }
-    .c4p-strip:nth-child(3) { background: #64714D; }
-    .c4p-strip:nth-child(4) { background: #D69A70; }
-    .c4p-strip:nth-child(5) { background: #596451; }
-
-    .project-lead-copy {
-      grid-column: 9 / span 4;
-      align-self: end;
-      padding-bottom: 12px;
-    }
-    .project-number,
-    .project-role,
-    .video-role {
-      font-size: 11px;
-      font-weight: 600;
-      line-height: 1.4;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    .project-number { color: var(--terracotta); margin-bottom: 18px; }
-    .project-title {
       margin: 0;
       font-family: var(--serif);
-      font-size: clamp(46px, 4.8vw, 64px);
+      font-size: clamp(48px, 5vw, 66px);
       font-weight: 400;
       line-height: 1;
-      letter-spacing: -.025em;
+      letter-spacing: -.03em;
     }
-    .project-role {
-      margin: 24px 0 0;
-      color: var(--olive);
-    }
-    .project-desc {
-      margin: 24px 0 0;
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.6;
-    }
-    .project-facts {
-      margin: 32px 0 0;
-      padding-top: 16px;
-      border-top: 1px solid var(--rule);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 20px;
-      color: var(--muted);
-      font-size: 12px;
-      letter-spacing: .04em;
-    }
-    .project-link { margin-top: 30px; }
-
-    .video-feature {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
-      padding: 104px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .video-feature-copy {
-      grid-column: 1 / span 4;
-      align-self: center;
-    }
-    .video-frame {
-      grid-column: 6 / span 7;
-      aspect-ratio: 16 / 9;
-      border: 0;
-      width: 100%;
-      background: var(--ink);
-    }
-
-    .video-section { padding-top: 104px; }
-    .video-section-head {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
-      margin-bottom: 42px;
-    }
-    .video-section-title {
-      grid-column: 1 / span 6;
-      margin: 0;
-      font-family: var(--serif);
-      font-size: clamp(42px, 4vw, 56px);
-      font-weight: 400;
-      line-height: 1.02;
-      letter-spacing: -.025em;
-    }
-    .video-section-note {
+    .case-meta {
       grid-column: 9 / span 4;
-      align-self: end;
       margin: 0;
+      color: var(--olive);
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.45;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .case-copy {
+      grid-column: 9 / span 4;
+      margin: 14px 0 0;
       color: var(--muted);
       font-size: 15px;
       line-height: 1.55;
     }
-    .video-grid {
+
+    .publication-collage {
       display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 18px;
+      min-height: 640px;
     }
-    .video-card {
-      grid-column: span 6;
-      display: block;
-      padding-bottom: 30px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .video-thumb {
+    .publication-cover {
       position: relative;
-      aspect-ratio: 16 / 9;
       overflow: hidden;
-      background: #ded7cb;
+      background: #efe6cc;
+      border: 1px solid rgba(23,23,20,.12);
     }
-    .video-thumb img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-      filter: saturate(.88) contrast(.97);
-      transition: transform 300ms ease, filter 180ms ease;
+    .pub-topline {
+      position: absolute;
+      top: 34px;
+      left: 38px;
+      right: 38px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
-    .video-card:hover .video-thumb img { transform: scale(1.02); filter: saturate(1); }
-    .video-thumb-typographic {
-      display: flex;
-      align-items: flex-end;
-      padding: 28px;
+    .pub-ribbon {
+      position: absolute;
+      left: 0;
+      top: 155px;
+      width: 60%;
+      height: 18px;
+      background: #D8792E;
+      transform: skewX(-28deg);
+      transform-origin: left center;
+    }
+    .pub-name {
+      position: absolute;
+      left: 22%;
+      top: 190px;
+      max-width: 460px;
+      font-family: var(--sans);
+      font-size: clamp(58px, 7vw, 92px);
+      font-weight: 600;
+      line-height: .83;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+      color: #26345c;
+    }
+    .pub-name strong { color: #D8792E; font-weight: 600; }
+    .pub-sub {
+      position: absolute;
+      left: 23%;
+      top: 375px;
+      max-width: 360px;
+      font-size: 16px;
+      line-height: 1.35;
+      text-align: center;
+    }
+    .pub-strips {
+      position: absolute;
+      left: 7%;
+      right: 7%;
+      bottom: 48px;
+      height: 170px;
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      align-items: end;
+      gap: 10px;
+    }
+    .pub-strips span { display: block; min-height: 72px; background: var(--olive); }
+    .pub-strips span:nth-child(2n) { background: #D8792E; height: 84%; }
+    .pub-strips span:nth-child(3n) { background: #26345c; height: 100%; }
+    .pub-strips span:nth-child(4n) { background: #9EAD8A; height: 72%; }
+    .pub-strips span:nth-child(5n) { background: #C96B4B; height: 93%; }
+
+    .publication-details {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 18px;
+    }
+    .publication-detail {
+      position: relative;
+      overflow: hidden;
+      padding: 30px;
+    }
+    .publication-detail:first-child {
       background: var(--olive);
       color: var(--ivory);
     }
-    .video-thumb-typographic span {
-      max-width: 420px;
-      font-family: var(--serif);
-      font-size: clamp(34px, 4vw, 52px);
-      line-height: .98;
-      letter-spacing: -.025em;
+    .publication-detail:last-child {
+      background: var(--sage);
+      color: var(--olive);
     }
-    .video-play {
+    .detail-number {
+      font-family: var(--serif);
+      font-size: clamp(90px, 11vw, 150px);
+      line-height: .75;
+      letter-spacing: -.06em;
+    }
+    .detail-caption {
       position: absolute;
-      right: 18px;
-      bottom: 18px;
-      width: 48px;
-      height: 48px;
-      display: grid;
-      place-items: center;
-      background: var(--ivory);
-      color: var(--ink);
-      font-size: 17px;
+      left: 30px;
+      right: 30px;
+      bottom: 26px;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: .12em;
+      text-transform: uppercase;
     }
-    .video-meta {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 20px;
-      align-items: end;
-      padding-top: 18px;
-    }
-    .video-title {
-      margin: 0;
-      font-family: var(--serif);
-      font-size: 30px;
-      line-height: 1.08;
-    }
-    .video-role { margin-top: 8px; color: var(--olive); }
-    .video-arrow {
-      font-size: 22px;
-      line-height: 1;
-      transition: transform 180ms ease;
-    }
-    .video-card:hover .video-arrow { transform: translate(3px,-3px); }
 
-    /* Events + web */
-    .experience-section {
-      margin-top: 118px;
-      padding-top: 104px;
-      border-top: 1px solid var(--rule);
-    }
-    .experience-head,
-    .web-head {
+    .events-collage {
       display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
-      margin-bottom: 48px;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 18px;
+      min-height: 590px;
     }
-    .experience-title,
-    .web-title {
-      grid-column: 1 / span 7;
-      margin: 0;
-      font-family: var(--serif);
-      font-size: clamp(44px, 4.4vw, 60px);
-      font-weight: 400;
-      line-height: 1.02;
-      letter-spacing: -.025em;
-    }
-    .experience-note,
-    .web-note {
-      grid-column: 9 / span 4;
-      align-self: end;
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.55;
-    }
-    .event-case {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
-      padding: 0 0 96px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .event-copy {
-      grid-column: 1 / span 4;
-      align-self: end;
-    }
-    .event-gallery {
-      grid-column: 6 / span 7;
-      display: grid;
-      grid-template-columns: 1.45fr .85fr;
-      gap: 14px;
-      align-items: stretch;
-    }
-    .booth-photo {
+    .event-photo,
+    .event-video-thumb {
       position: relative;
       overflow: hidden;
-      background: #ded7cb;
-      min-height: 430px;
+      background: #ddd5c8;
     }
-    .booth-photo img {
+    .event-photo img,
+    .event-video-thumb img {
       width: 100%;
       height: 100%;
       display: block;
       object-fit: cover;
     }
-    .booth-photo-portrait img { object-position: 50% 46%; }
+    .event-photo-wide { min-height: 590px; }
+    .event-stack {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 18px;
+    }
+    .event-stack .event-photo,
+    .event-stack .event-video-thumb { min-height: 286px; }
+    .event-caption {
+      position: absolute;
+      left: 16px;
+      bottom: 14px;
+      padding: 7px 10px;
+      background: rgba(248,242,232,.92);
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
     .face-blur {
       position: absolute;
       display: block;
       border-radius: 50%;
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      background: rgba(248,242,232,.06);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(248,242,232,.08);
       pointer-events: none;
     }
-    .wide-face-1 { width: 7%; aspect-ratio: 1; left: 47%; top: 30%; }
+    .wide-face-1 { width: 7%; aspect-ratio: 1; left: 46%; top: 30%; }
     .wide-face-2 { width: 7%; aspect-ratio: 1; left: 57%; top: 37%; }
-    .wide-face-3 { width: 6.5%; aspect-ratio: 1; left: 70%; top: 38%; }
-    .wide-face-4 { width: 6.5%; aspect-ratio: 1; left: 79%; top: 47%; }
-    .portrait-face { width: 25%; aspect-ratio: 1; left: 37.5%; top: 18%; }
-    .event-video {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
-      padding: 96px 0 0;
-    }
-    .event-video .event-copy { grid-column: 8 / span 5; order: 2; }
-    .event-video .video-frame { grid-column: 1 / span 6; order: 1; }
+    .wide-face-3 { width: 7%; aspect-ratio: 1; left: 69%; top: 38%; }
+    .wide-face-4 { width: 6%; aspect-ratio: 1; left: 80%; top: 47%; }
+    .portrait-face { width: 27%; aspect-ratio: 1; left: 36%; top: 18%; }
 
-    .web-section {
-      margin-top: 118px;
-      padding-top: 104px;
-      border-top: 1px solid var(--rule);
-    }
-    .web-columns {
+    .moving-grid {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
+      gap: 18px;
     }
-    .web-column:first-child { grid-column: 1 / span 6; }
-    .web-column:last-child { grid-column: 7 / span 6; }
-    .web-column h4 {
-      margin: 0 0 14px;
-      color: var(--olive);
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 1.4;
-      letter-spacing: .14em;
-      text-transform: uppercase;
+    .moving-card {
+      grid-column: span 6;
+      display: block;
     }
-    .web-link {
-      min-height: 86px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: center;
-      border-top: 1px solid var(--rule);
-      transition: color 180ms ease;
+    .moving-thumb {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #ded7cb;
     }
-    .web-link:last-child { border-bottom: 1px solid var(--rule); }
-    .web-link-title {
+    .moving-thumb img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: saturate(.9);
+      transition: transform 260ms ease;
+    }
+    .moving-card:hover .moving-thumb img { transform: scale(1.018); }
+    .moving-thumb-type {
+      display: flex;
+      align-items: flex-end;
+      padding: 26px;
+      background: var(--olive);
+      color: var(--ivory);
       font-family: var(--serif);
-      font-size: 24px;
-      line-height: 1.08;
-    }
-    .web-link-arrow {
-      font-size: 20px;
-      transition: transform 180ms ease;
-    }
-    .web-link:hover { color: var(--olive); }
-    .web-link:hover .web-link-arrow { transform: translate(3px,-3px); }
-    .web-role {
-      margin-top: 24px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .placeholder-section {
-      margin-top: 118px;
-      padding-top: 104px;
-      border-top: 1px solid var(--rule);
-    }
-    .placeholder-head {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 24px;
-      margin-bottom: 42px;
-    }
-    .placeholder-title {
-      grid-column: 1 / span 7;
-      margin: 0;
-      font-family: var(--serif);
-      font-size: clamp(42px, 4vw, 56px);
-      font-weight: 400;
-      line-height: 1.02;
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: .98;
       letter-spacing: -.025em;
     }
-    .placeholder-note {
-      grid-column: 9 / span 4;
-      align-self: end;
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.55;
+    .moving-role {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding-top: 14px;
+      color: var(--olive);
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: .12em;
+      text-transform: uppercase;
     }
-    .placeholder-grid {
+
+    .digital-strip {
+      margin-top: 112px;
+      padding-top: 42px;
+      border-top: 1px solid var(--rule);
+    }
+    .digital-strip-head {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
       gap: 24px;
+      align-items: end;
+      margin-bottom: 22px;
     }
-    .placeholder-card {
-      grid-column: span 4;
-      min-height: 240px;
-      padding: 26px 0 28px;
+    .digital-strip h3 {
+      grid-column: 1 / span 6;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1.05;
+    }
+    .digital-strip p {
+      grid-column: 9 / span 4;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .digital-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .digital-link {
+      min-height: 118px;
+      padding: 18px 0;
       border-top: 1px solid var(--ink);
       border-bottom: 1px solid var(--rule);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-    .placeholder-kicker {
-      color: var(--terracotta);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .14em;
-      text-transform: uppercase;
+    .digital-link span:first-child {
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.08;
     }
-    .placeholder-card h4 {
+    .digital-link span:last-child {
+      color: var(--olive);
+      font-size: 18px;
+      align-self: flex-end;
+    }
+
+    .earlier {
+      margin-top: 112px;
+      padding-top: 42px;
+      border-top: 1px solid var(--rule);
+    }
+    .earlier-head {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+    .earlier-head h3 {
+      grid-column: 1 / span 6;
       margin: 0;
       font-family: var(--serif);
-      font-size: 30px;
+      font-size: 36px;
       font-weight: 400;
       line-height: 1.05;
     }
-    .placeholder-card p {
-      margin: 14px 0 0;
+    .earlier-head p {
+      grid-column: 9 / span 4;
+      margin: 0;
       color: var(--muted);
       font-size: 14px;
       line-height: 1.5;
     }
-
-    /* Practice */
-    #practice { padding: 128px 0; }
-    .practice-intro { margin-bottom: 72px; }
-    .practice-label { grid-column: 1 / -1; }
-    .practice-grid {
+    .earlier-row {
+      min-height: 72px;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0 48px;
+      grid-template-columns: 2fr 1fr;
+      align-items: center;
       border-top: 1px solid var(--rule);
+      font-size: 15px;
     }
-    .practice-item {
-      min-height: 248px;
-      padding: 36px 0 44px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .practice-no {
-      display: block;
-      margin-bottom: 34px;
-      color: var(--terracotta);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .15em;
-    }
-    .practice-title {
-      margin: 0 0 16px;
-      font-size: 30px;
-      line-height: 1.15;
-    }
-    .practice-copy {
-      margin: 0;
-      max-width: 560px;
+    .earlier-row:last-child { border-bottom: 1px solid var(--rule); }
+    .earlier-row span:last-child {
       color: var(--muted);
-      font-size: 16px;
-      line-height: 1.6;
+      text-align: right;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
 
     /* Profile */
@@ -1043,6 +929,46 @@
       .practice-no { margin-bottom: 24px; }
       .practice-title { font-size: 26px; }
 
+      .case { padding-bottom: 76px; margin-bottom: 76px; }
+      .case-head,
+      .digital-strip-head,
+      .earlier-head,
+      .moving-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .case-title,
+      .case-meta,
+      .case-copy,
+      .digital-strip h3,
+      .digital-strip p,
+      .earlier-head h3,
+      .earlier-head p,
+      .moving-card {
+        grid-column: 1 / -1;
+      }
+      .case-meta { margin-top: 12px; }
+      .case-copy { margin-top: 0; }
+      .publication-collage,
+      .events-collage {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+      .publication-cover { min-height: 520px; }
+      .publication-details { grid-template-columns: 1fr 1fr; grid-template-rows: none; }
+      .publication-detail { min-height: 190px; }
+      .pub-name { left: 16%; top: 170px; font-size: 56px; }
+      .pub-sub { left: 18%; top: 335px; font-size: 14px; }
+      .pub-strips { height: 130px; }
+      .event-photo-wide { min-height: 360px; }
+      .event-stack { grid-template-columns: 1fr 1fr; grid-template-rows: none; }
+      .event-stack .event-photo,
+      .event-stack .event-video-thumb { min-height: 250px; }
+      .moving-role { font-size: 10px; }
+      .digital-links { grid-template-columns: 1fr; gap: 0; }
+      .earlier-row { grid-template-columns: 1fr; gap: 4px; padding: 16px 0; }
+      .earlier-row span:last-child { text-align: left; }
+
       .profile-label,
       .profile-content {
         grid-column: 1 / -1;
@@ -1086,7 +1012,6 @@
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
         <a href="#work">Work</a>
-        <a href="#practice">Practice</a>
         <a href="#profile">Profile</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -1109,240 +1034,119 @@
       <div class="page">
         <div class="section-grid work-intro">
           <div class="work-label"><p class="eyebrow">Work</p></div>
-          <h2 class="section-heading serif">Selected projects.</h2>
-          <p class="section-intro">A growing selection of recent work. Earlier journalism, cultural and external relations projects will be added next.</p>
+          <h2 class="section-heading serif">Selected work.</h2>
+          <p class="section-intro">A small selection. More examples are available on request.</p>
         </div>
 
-        <article class="project-lead">
-          <a class="project-art" href="https://www.undp.org/africa/publications/creatives4peace-15-youth-led-creative-solutions-social-cohesion-and-peacebuilding" target="_blank" rel="noopener" aria-label="View Creatives4Peace publication">
-            <div class="c4p-cover" aria-hidden="true">
-              <div class="c4p-main">
-                <div class="c4p-kicker">Youth Creative Innovation Challenge</div>
-                <div class="c4p-title">Creatives<br>4Peace</div>
-                <div class="c4p-four">4</div>
-              </div>
-              <div class="c4p-strip"></div>
-              <div class="c4p-strip"></div>
-              <div class="c4p-strip"></div>
-              <div class="c4p-strip"></div>
+        <article class="case">
+          <div class="case-head">
+            <h3 class="case-title">Creatives4Peace</h3>
+            <div>
+              <p class="case-meta">Creative direction · Publication design · 2026</p>
+              <p class="case-copy">Visual concept and full publication design for a collection of 15 youth-led creative solutions.</p>
+            </div>
+          </div>
+
+          <a class="publication-collage" href="https://www.undp.org/africa/publications/creatives4peace-15-youth-led-creative-solutions-social-cohesion-and-peacebuilding" target="_blank" rel="noopener" aria-label="View Creatives4Peace publication">
+            <div class="publication-cover" aria-hidden="true">
+              <div class="pub-topline">Youth Online Innovation Challenge</div>
+              <div class="pub-ribbon"></div>
+              <div class="pub-name">Creatives<br><strong>4</strong>Peace</div>
+              <div class="pub-sub">15 youth-led creative solutions for social cohesion and peacebuilding</div>
+              <div class="pub-strips"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="publication-details" aria-hidden="true">
+              <div class="publication-detail"><div class="detail-number">15</div><div class="detail-caption">Finalist profiles</div></div>
+              <div class="publication-detail"><div class="detail-number">44</div><div class="detail-caption">Countries represented in the challenge</div></div>
             </div>
           </a>
-          <div class="project-lead-copy">
-            <div class="project-number">01 / Publication</div>
-            <h3 class="project-title">Creatives4Peace</h3>
-            <p class="project-role">Creative direction · Publication design</p>
-            <p class="project-desc">Visual concept and full publication design, including the cover, page system, typography, image treatment and final layout.</p>
-            <div class="project-facts"><span>2026</span><span>15 finalist profiles</span><span>44 countries represented in the challenge</span></div>
-            <a class="text-link project-link" href="https://www.undp.org/africa/publications/creatives4peace-15-youth-led-creative-solutions-social-cohesion-and-peacebuilding" target="_blank" rel="noopener">View publication <span aria-hidden="true">↗</span></a>
-          </div>
         </article>
 
-        <article class="video-feature">
-          <div class="video-feature-copy">
-            <div class="project-number">02 / Interview series</div>
-            <h3 class="project-title">Interviews, filmed and edited</h3>
-            <p class="project-role">Interviewing · Phone filming · Editing</p>
-            <p class="project-desc">A hands-on series where I conducted the interviews, filmed on my phone and edited the final videos.</p>
-            <a class="text-link project-link" href="https://youtube.com/playlist?list=PLeXbF67e2QWab3jY2-T0y6sbekoiFBp3V" target="_blank" rel="noopener">Open playlist <span aria-hidden="true">↗</span></a>
-          </div>
-          <iframe class="video-frame" loading="lazy" src="https://www.youtube.com/embed/videoseries?list=PLeXbF67e2QWab3jY2-T0y6sbekoiFBp3V" title="Interview video series" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </article>
-
-        <section class="video-section" aria-labelledby="video-work-title">
-          <div class="video-section-head">
-            <h3 class="video-section-title" id="video-work-title">Selected video work</h3>
-            <p class="video-section-note">Different roles on different pieces, from concept and direction to short-form editing.</p>
-          </div>
-
-          <div class="video-grid">
-            <a class="video-card" href="https://youtu.be/T1VQXgIPZQY" target="_blank" rel="noopener">
-              <div class="video-thumb">
-                <img src="https://i.ytimg.com/vi/T1VQXgIPZQY/hqdefault.jpg" alt="" loading="lazy">
-                <span class="video-play" aria-hidden="true">▶</span>
-              </div>
-              <div class="video-meta">
-                <div><h4 class="video-title">Concept & direction</h4><div class="video-role">Video</div></div>
-                <span class="video-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-
-            <a class="video-card" href="https://youtu.be/yDcRZ48Uwn0" target="_blank" rel="noopener">
-              <div class="video-thumb">
-                <img src="https://i.ytimg.com/vi/yDcRZ48Uwn0/hqdefault.jpg" alt="" loading="lazy">
-                <span class="video-play" aria-hidden="true">▶</span>
-              </div>
-              <div class="video-meta">
-                <div><h4 class="video-title">Concept & direction</h4><div class="video-role">Video</div></div>
-                <span class="video-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-
-            <a class="video-card" href="https://youtu.be/0E4hjhOXCw0" target="_blank" rel="noopener">
-              <div class="video-thumb">
-                <img src="https://i.ytimg.com/vi/0E4hjhOXCw0/hqdefault.jpg" alt="" loading="lazy">
-                <span class="video-play" aria-hidden="true">▶</span>
-              </div>
-              <div class="video-meta">
-                <div><h4 class="video-title">Trailer edit</h4><div class="video-role">Editing</div></div>
-                <span class="video-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-
-            <a class="video-card" href="https://youtu.be/ZIJP3xQp5a8" target="_blank" rel="noopener">
-              <div class="video-thumb">
-                <img src="https://i.ytimg.com/vi/ZIJP3xQp5a8/hqdefault.jpg" alt="" loading="lazy">
-                <span class="video-play" aria-hidden="true">▶</span>
-              </div>
-              <div class="video-meta">
-                <div><h4 class="video-title">Teaser edit</h4><div class="video-role">Editing</div></div>
-                <span class="video-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-
-            <a class="video-card" href="https://lnkd.in/p/eFTf3RN6" target="_blank" rel="noopener">
-              <div class="video-thumb video-thumb-typographic">
-                <span>Concept, direction, filming & editing</span>
-                <span class="video-play" aria-hidden="true">▶</span>
-              </div>
-              <div class="video-meta">
-                <div><h4 class="video-title">Full production</h4><div class="video-role">Concept · Direction · Filming · Editing</div></div>
-                <span class="video-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="experience-section" aria-labelledby="experiences-title">
-          <div class="experience-head">
-            <h3 class="experience-title" id="experiences-title">Events as creative projects</h3>
-            <p class="experience-note">Concept work for physical spaces and event experiences, alongside communications and delivery.</p>
-          </div>
-
-          <article class="event-case">
-            <div class="event-copy">
-              <div class="project-number">03 / ARFSD12 Knowledge Fair</div>
-              <h3 class="project-title">Photo booth & stand concept</h3>
-              <p class="project-role">Concept · Stand décor · Photo booth</p>
-              <p class="project-desc">Developed the concept for the UNDP stand and photo booth in Addis Ababa, including the social-media frame, Africa-shaped cut-out and stand decoration.</p>
-              <a class="text-link project-link" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd12" target="_blank" rel="noopener">View event page <span aria-hidden="true">↗</span></a>
+        <article class="case">
+          <div class="case-head">
+            <h3 class="case-title">Knowledge Fairs</h3>
+            <div>
+              <p class="case-meta">Concept · Stand & photo booth · Video direction</p>
+              <p class="case-copy">Spatial and visual concepts for ARFSD Knowledge Fair activations in Addis Ababa and Kampala.</p>
             </div>
+          </div>
 
-            <div class="event-gallery">
-              <figure class="booth-photo booth-photo-wide">
-                <img src="https://live.staticflickr.com/65535/55235555877_345bec40e4_o.jpg" alt="UNDP stand at the ARFSD12 Knowledge Fair" loading="lazy">
-                <span class="face-blur wide-face-1" aria-hidden="true"></span>
-                <span class="face-blur wide-face-2" aria-hidden="true"></span>
-                <span class="face-blur wide-face-3" aria-hidden="true"></span>
-                <span class="face-blur wide-face-4" aria-hidden="true"></span>
-              </figure>
-              <figure class="booth-photo booth-photo-portrait">
+          <div class="events-collage">
+            <a class="event-photo event-photo-wide" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd12" target="_blank" rel="noopener">
+              <img src="https://live.staticflickr.com/65535/55235555877_345bec40e4_o.jpg" alt="ARFSD12 Knowledge Fair stand" loading="lazy">
+              <span class="face-blur wide-face-1" aria-hidden="true"></span>
+              <span class="face-blur wide-face-2" aria-hidden="true"></span>
+              <span class="face-blur wide-face-3" aria-hidden="true"></span>
+              <span class="face-blur wide-face-4" aria-hidden="true"></span>
+              <span class="event-caption">ARFSD12 · Addis Ababa</span>
+            </a>
+            <div class="event-stack">
+              <a class="event-photo" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd12" target="_blank" rel="noopener">
                 <img src="https://live.staticflickr.com/65535/55236456871_cc21efcefe_o.jpg" alt="ARFSD12 photo booth concept" loading="lazy">
                 <span class="face-blur portrait-face" aria-hidden="true"></span>
-              </figure>
-            </div>
-          </article>
-
-          <article class="event-video">
-            <div class="event-copy">
-              <div class="project-number">04 / ARFSD11 Knowledge Fair · Kampala</div>
-              <h3 class="project-title">Knowledge Fair booth</h3>
-              <p class="project-role">Booth concept · Video direction</p>
-              <p class="project-desc">Developed the booth concept and directed the video presenting the Knowledge Fair activation in Kampala.</p>
-              <a class="text-link project-link" href="https://youtu.be/830Hj2InZVA" target="_blank" rel="noopener">Watch video <span aria-hidden="true">↗</span></a>
-            </div>
-            <iframe class="video-frame" loading="lazy" src="https://www.youtube.com/embed/830Hj2InZVA" title="ARFSD11 Knowledge Fair booth video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </article>
-        </section>
-
-        <section class="web-section" aria-labelledby="web-work-title">
-          <div class="web-head">
-            <h3 class="web-title" id="web-work-title">Webpage creation & digital publishing</h3>
-            <p class="web-note">Page structure, copy, assets and CMS publishing for event and project pages.</p>
-          </div>
-
-          <div class="web-columns">
-            <div class="web-column">
-              <h4>Events</h4>
-              <a class="web-link" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd12" target="_blank" rel="noopener"><span class="web-link-title">ARFSD12</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <a class="web-link" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd11" target="_blank" rel="noopener"><span class="web-link-title">ARFSD11</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <a class="web-link" href="https://www.undp.org/africa/events/africa-conference-disability-inclusion-electoral-processes-digital-era" target="_blank" rel="noopener"><span class="web-link-title">Africa Conference on Disability Inclusion in Electoral Processes</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <p class="web-role">Event pages: structure · copy · links · resources · publishing</p>
-            </div>
-
-            <div class="web-column">
-              <h4>Projects & programmes</h4>
-              <a class="web-link" href="https://www.undp.org/africa-elections-fund-aef" target="_blank" rel="noopener"><span class="web-link-title">Africa Elections Fund</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <a class="web-link" href="https://www.undp.org/africa/regional-programme-africa" target="_blank" rel="noopener"><span class="web-link-title">Regional Programme for Africa</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <a class="web-link" href="https://www.undp.org/africa/afcfta" target="_blank" rel="noopener"><span class="web-link-title">AfCFTA</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <a class="web-link" href="https://www.undp.org/africa/AfYWL" target="_blank" rel="noopener"><span class="web-link-title">African Young Women Leaders Fellowship</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <a class="web-link" href="https://www.undp.org/africa/AboutAFSIT" target="_blank" rel="noopener"><span class="web-link-title">AFSIT</span><span class="web-link-arrow" aria-hidden="true">↗</span></a>
-              <p class="web-role">Project pages: information structure · editorial copy · visual assets · CMS publishing</p>
+                <span class="event-caption">Photo booth concept</span>
+              </a>
+              <a class="event-video-thumb" href="https://youtu.be/830Hj2InZVA" target="_blank" rel="noopener">
+                <img src="https://i.ytimg.com/vi/830Hj2InZVA/hqdefault.jpg" alt="ARFSD11 Knowledge Fair video" loading="lazy">
+                <span class="event-caption">ARFSD11 · Kampala · Video direction</span>
+              </a>
             </div>
           </div>
-        </section>
+        </article>
 
-        <section class="placeholder-section" aria-labelledby="earlier-work-title">
-          <div class="placeholder-head">
-            <h3 class="placeholder-title" id="earlier-work-title">Earlier work</h3>
-            <p class="placeholder-note">Space reserved for projects from before the current selection.</p>
+        <article class="case">
+          <div class="case-head">
+            <h3 class="case-title">Moving image</h3>
+            <div>
+              <p class="case-meta">Concept · Direction · Filming · Editing</p>
+              <p class="case-copy">A compact selection showing different levels of involvement, from concept and direction to hands-on filming and editing.</p>
+            </div>
           </div>
-          <div class="placeholder-grid">
-            <article class="placeholder-card">
-              <span class="placeholder-kicker">To add</span>
-              <div>
-                <h4>Journalism & digital media</h4>
-                <p>Selected reporting, interviews and digital-first editorial work.</p>
-              </div>
-            </article>
-            <article class="placeholder-card">
-              <span class="placeholder-kicker">To add</span>
-              <div>
-                <h4>Culture & events</h4>
-                <p>Festival, press, media and cultural project work.</p>
-              </div>
-            </article>
-            <article class="placeholder-card">
-              <span class="placeholder-kicker">To add</span>
-              <div>
-                <h4>External relations & reporting</h4>
-                <p>Selected work from communications, reporting and partner-facing projects.</p>
-              </div>
-            </article>
+
+          <div class="moving-grid">
+            <a class="moving-card" href="https://youtu.be/T1VQXgIPZQY" target="_blank" rel="noopener">
+              <div class="moving-thumb"><img src="https://i.ytimg.com/vi/T1VQXgIPZQY/hqdefault.jpg" alt="" loading="lazy"></div>
+              <div class="moving-role"><span>Concept & direction</span><span>↗</span></div>
+            </a>
+
+            <a class="moving-card" href="https://youtu.be/yDcRZ48Uwn0" target="_blank" rel="noopener">
+              <div class="moving-thumb"><img src="https://i.ytimg.com/vi/yDcRZ48Uwn0/hqdefault.jpg" alt="" loading="lazy"></div>
+              <div class="moving-role"><span>Concept & direction</span><span>↗</span></div>
+            </a>
+
+            <a class="moving-card" href="https://lnkd.in/p/eFTf3RN6" target="_blank" rel="noopener">
+              <div class="moving-thumb moving-thumb-type">Concept, direction, filming & editing</div>
+              <div class="moving-role"><span>Full production</span><span>↗</span></div>
+            </a>
+
+            <a class="moving-card" href="https://youtube.com/playlist?list=PLeXbF67e2QWab3jY2-T0y6sbekoiFBp3V" target="_blank" rel="noopener">
+              <div class="moving-thumb"><img src="https://i.ytimg.com/vi/T1VQXgIPZQY/hqdefault.jpg" alt="" loading="lazy"></div>
+              <div class="moving-role"><span>Interviews · Phone filming · Editing</span><span>↗</span></div>
+            </a>
+          </div>
+        </article>
+
+        <section class="digital-strip" aria-labelledby="digital-pages-title">
+          <div class="digital-strip-head">
+            <h3 id="digital-pages-title">Selected digital pages</h3>
+            <p>Webpage creation, content structure and CMS publishing. More examples available on request.</p>
+          </div>
+          <div class="digital-links">
+            <a class="digital-link" href="https://www.undp.org/africa/events/undp-africa-regional-forum-sustainable-development-arfsd12" target="_blank" rel="noopener"><span>ARFSD12</span><span>↗</span></a>
+            <a class="digital-link" href="https://www.undp.org/africa-elections-fund-aef" target="_blank" rel="noopener"><span>Africa Elections Fund</span><span>↗</span></a>
+            <a class="digital-link" href="https://www.undp.org/africa/AfYWL" target="_blank" rel="noopener"><span>African Young Women Leaders Fellowship</span><span>↗</span></a>
           </div>
         </section>
-      </div>
-    </section>
 
-    <section class="content-section" id="practice">
-      <div class="page">
-        <div class="section-grid practice-intro">
-          <div class="practice-label"><p class="eyebrow">Practice</p></div>
-          <h2 class="section-heading serif">From brief to final output.</h2>
-          <p class="section-intro">My role is usually between the brief and the finished work: turning the brief into a concept, setting direction, coordinating specialists, reviewing the work and keeping delivery on track.</p>
-        </div>
-
-        <div class="practice-grid">
-          <article class="practice-item">
-            <span class="practice-no">01</span>
-            <h3 class="practice-title serif">Creative direction</h3>
-            <p class="practice-copy">Concepts, creative briefs, references, visual direction and review.</p>
-          </article>
-          <article class="practice-item">
-            <span class="practice-no">02</span>
-            <h3 class="practice-title serif">Editorial direction</h3>
-            <p class="practice-copy">Structure, tone, editing and quality control across publications, web content, campaigns and scripts.</p>
-          </article>
-          <article class="practice-item">
-            <span class="practice-no">03</span>
-            <h3 class="practice-title serif">Digital strategy and platforms</h3>
-            <p class="practice-copy">Websites, CMSs, social channels, newsletters and digital tools, with attention to how content works across each one.</p>
-          </article>
-          <article class="practice-item">
-            <span class="practice-no">04</span>
-            <h3 class="practice-title serif">Project and event management</h3>
-            <p class="practice-copy">Timelines, contributors, partners, suppliers, approvals, logistics and delivery.</p>
-          </article>
-        </div>
+        <section class="earlier" aria-labelledby="earlier-title">
+          <div class="earlier-head">
+            <h3 id="earlier-title">Earlier work</h3>
+            <p>Placeholders for projects that will broaden the portfolio beyond the recent selection.</p>
+          </div>
+          <div class="earlier-row"><span>Journalism & digital media</span><span>Examples to add</span></div>
+          <div class="earlier-row"><span>Culture & events</span><span>Examples to add</span></div>
+          <div class="earlier-row"><span>External relations & reporting</span><span>Examples to add</span></div>
+        </section>
       </div>
     </section>
 
@@ -1351,7 +1155,7 @@
         <div class="profile-label"><p class="eyebrow">Profile</p></div>
         <div class="profile-content">
           <h2 class="profile-title serif">Journalism, digital communications, creative direction and project delivery.</h2>
-          <p class="profile-copy">My background started in journalism and expanded into editorial, digital, events and creative project management. I am most interested in projects where content, design, digital tools and coordination need to work together.</p>
+          <p class="profile-copy">My work started in journalism and now includes creative direction, digital communications, editorial, events and project delivery. I usually sit between the brief, the creative team and the final output.</p>
           <div class="profile-links">
             <a class="text-link" href="https://www.linkedin.com/in/ayda-labassi-16145285/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
@@ -1362,7 +1166,7 @@
     <section class="contact" id="contact">
       <div class="page contact-grid">
         <div class="contact-label"><p class="eyebrow">Contact</p></div>
-        <h2 class="contact-title serif">For roles, consultancies and creative collaborations.</h2>
+        <h2 class="contact-title serif">For roles, consultancies, collaborations and selected work enquiries.</h2>
         <div class="contact-links">
           <a href="mailto:aydalabassi@hotmail.com"><span>aydalabassi@hotmail.com</span><span aria-hidden="true">↗</span></a>
           <a href="https://www.linkedin.com/in/ayda-labassi-16145285/" target="_blank" rel="noopener"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
