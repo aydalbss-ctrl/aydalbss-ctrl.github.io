@@ -1,101 +1,34 @@
 {
   "seo": {
-    "title": "A Lab by Ayda Labassi | Creative Direction, Digital & Editorial",
-    "description": "Portfolio of Ayda Labassi: creative direction, digital strategy, editorial work, campaigns, multimedia direction and events."
+    "title": "A Lab by Ayda Labassi | Creative Communications",
+    "description": "Ayda Labassi — creative communications across editorial, digital, campaigns, events and multimedia."
   },
   "hero": {
-    "title": "Creative direction, digital strategy, editorial work and events.",
-    "support": "I develop the concept, set the content and visual direction, brief creative teams and manage delivery across campaigns, publications, digital platforms and events.",
-    "credibility": "Concept development · Creative direction · Editorial · Digital · Events",
-    "link_label": "Explore selected work"
-  },
-  "work": {
-    "label": "Work",
-    "heading": "Selected work.",
-    "intro": "A small selection. More examples are available on request.",
-    "featured": [
-      {
-        "number": "01",
-        "title": "Creative direction and campaigns",
-        "description": "Concept development, messaging, creative briefs, visual direction and roll-out planning."
-      },
-      {
-        "number": "02",
-        "title": "Editorial direction and publications",
-        "description": "Editorial structure, editing, design review and production oversight for reports, newsletters, features and visual publications."
-      },
-      {
-        "number": "03",
-        "title": "Multimedia direction",
-        "description": "Concepts, briefs, storylines, team and vendor coordination, review and quality control for video and photography.",
-        "labels": [
-          "Concept",
-          "Briefs",
-          "Review"
-        ]
-      }
-    ],
-    "secondary_label": "Also",
-    "secondary": [
-      {
-        "number": "04",
-        "title": "Digital platforms and tools",
-        "description": "Web content strategy, information structure, CMS publishing and the use of digital tools in communications work."
-      },
-      {
-        "number": "05",
-        "title": "Events and experiences",
-        "description": "Concept, programme design, speaker and partner coordination, communications, production oversight and on-site delivery."
-      },
-      {
-        "number": "06",
-        "title": "Journalism and editorial",
-        "description": "Reporting, interviews, features, analysis and long-form editorial work."
-      }
-    ]
+    "title": "Shaping how complex work is understood, seen and shared.",
+    "support": "Creative direction, editorial and digital communications, campaigns and events."
   },
   "practice": {
-    "label": "Practice",
-    "heading": "From brief to final output.",
-    "intro": "My role is usually between the brief and the finished work: turning the brief into a concept, setting direction, coordinating specialists, reviewing the work and keeping delivery on track.",
+    "heading": "Creative communications, from idea to delivery.",
     "items": [
-      {
-        "number": "01",
-        "title": "Creative direction",
-        "description": "Concepts, creative briefs, references, visual direction and review."
-      },
-      {
-        "number": "02",
-        "title": "Editorial direction",
-        "description": "Structure, tone, editing and quality control across publications, web content, campaigns and scripts."
-      },
-      {
-        "number": "03",
-        "title": "Digital strategy and platforms",
-        "description": "Websites, CMSs, social channels, newsletters and digital tools, with attention to how content works across each one."
-      },
-      {
-        "number": "04",
-        "title": "Project and event management",
-        "description": "Timelines, contributors, partners, suppliers, approvals, logistics and delivery."
-      }
+      "Creative direction",
+      "Editorial direction",
+      "Digital communications",
+      "Campaigns & content",
+      "Events & experiences",
+      "Creative project direction"
     ]
   },
   "profile": {
-    "label": "Profile",
-    "heading": "Journalism, digital communications, creative direction and project delivery.",
-    "copy": "My work started in journalism and now includes creative direction, digital communications, editorial, events and project delivery. I usually sit between the brief, the creative team and the final output.",
-    "linkedin_label": "LinkedIn",
+    "heading": "Journalism first. Then digital, editorial, creative projects and events.",
+    "copy": "I started in journalism and moved into communications roles where content, platforms, production and coordination all matter. That mix still defines how I work: editorial judgement, digital fluency and hands-on project direction.",
     "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
+  },
+  "samples": {
+    "heading": "Selected work is available on request.",
+    "copy": "A consolidated portfolio covering editorial, digital, campaigns, events and multimedia can be shared for relevant roles, consultancies and collaborations."
   },
   "contact": {
-    "label": "Contact",
-    "heading": "For roles, consultancies, collaborations and selected work enquiries.",
     "email": "aydalabassi@hotmail.com",
-    "linkedin_label": "LinkedIn",
     "linkedin_url": "https://www.linkedin.com/in/ayda-labassi-16145285/"
-  },
-  "footer": {
-    "descriptor": "Creative Direction · Digital · Editorial · Events"
   }
 }
